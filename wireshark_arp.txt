@@ -1,0 +1,31 @@
+Alan Fraticelli, Alex Abrahamson
+17 November 2017
+Lab 4
+
+
+1. (attached)
+
+2. 
+    (a) "Wireshark Lab: Ethernet and ARP: Capturing Ethernet Frames"
+            1.  
+            2.  
+            3.  
+
+
+    (b) Why is an ARP query sent within a broadcast frame? 
+        Why is an ARP response sent within a frame with a specific destination MAC address?
+            
+
+
+    (c) "Wireshark Lab: Ethernet and ARP: The Adress Resolution Protocol"
+            12. 
+            13. 
+            14. 
+            15. 
+
+
+    (d) What is the default amount of time that an entry remains in your ARP cache before being removed?
+        Indicate how/where you determined this value.
+            
+
+
