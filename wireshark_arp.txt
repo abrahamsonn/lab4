@@ -1,31 +1,42 @@
-Alan Fraticelli, Alex Abrahamson
-17 November 2017
-Lab 4
-
-
 1. (attached)
 
 2. 
     (a) "Wireshark Lab: Ethernet and ARP: Capturing Ethernet Frames"
-            1.  
-            2.  
-            3.  
+            1.  Source - f4:0f:24:0f:cb:f8
+            2.  Dest   - 00:00:0c:9f:f2:56. This is not the ethernet address of gaia.cs.umass.edu - this is
+                         the ethernet address of the first-hop router.
+            3.  0x0800
+            4.  The "G" is on the 67th byte
 
 
     (b) Why is an ARP query sent within a broadcast frame? 
+            - With a broadcast frame, each node has a self-configuring table and the network has a certain
+                level of plug-and-play. The broadcast frame is what allows this, because when a node attempts
+                to connect/interact with another node when it has moved or has not been discovered yet, it
+                will always be reached.
         Why is an ARP response sent within a frame with a specific destination MAC address?
-            
+            - The response is sent within the frame with a specific address because the broadcast frame
+                contains the source, and so the receiving node knows exactly where to send its response. This
+                prevents the network from being  burdened with multiple broadcasts.
 
 
     (c) "Wireshark Lab: Ethernet and ARP: The Adress Resolution Protocol"
-            12. 
+            12.
+                (a) 20 bytes 
+                (b) 0000 0000 0000 0001
+                (c) yes
+                (d) It starts at byte 39
             13. 
-            14. 
-            15. 
+                (a) At 21 bytes
+                (b) 0000 0000 0000 0010
+                (c) At byte 29
+            14. Sender MAC - 00:06:25:da:af:73
+                Target MAC - 00:d0:59:a9:3d:68
+            15. Because we are not the address being queried.
 
 
     (d) What is the default amount of time that an entry remains in your ARP cache before being removed?
         Indicate how/where you determined this value.
-            
+            20 minutes (man pages)
 
 

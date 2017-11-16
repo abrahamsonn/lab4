@@ -1,0 +1,3 @@
+3.  BONUS
+    The target host will not be able to be reached because the ARP table entry does not have correct values. Then after a few
+        failed messages, the host will be considered down (usually for 20 seconds).
